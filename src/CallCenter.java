@@ -13,9 +13,10 @@ public class CallCenter {
                 String call = "request " + i;
                 queue.add(call);
                 System.out.printf("%s added to queue ATC %s\n", Thread.currentThread().getName(), call);
+                Thread.sleep(250);
             }
-            iterations++;
-            Thread.sleep(3350);
+
+
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -23,7 +24,7 @@ public class CallCenter {
 
     public void workOperator() {
         try {
-            Thread.sleep(3000);
+            Thread.sleep(1000);
             while (true) {
                 if (queue.isEmpty()) {
                     break;

@@ -15,9 +15,9 @@ public class Main {
 
 
         profy1.start();
-        Thread.sleep(1000);
+//        Thread.sleep(700);
         profy2.start();
-        Thread.sleep(1000);
+//        Thread.sleep(800);
         profy3.start();
         atc.start();
         atc.join();
